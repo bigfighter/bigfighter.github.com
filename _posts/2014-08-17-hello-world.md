@@ -55,7 +55,7 @@ As we have seen, USBasp programmers have a vendor id of `16c0` and a product id 
 Create a file called `usbasp.rules` (the name is not very important, but the prefix *must* be `.rules`) in `/etc/udev/rules.d` and make it readable for everyone. Then open it in a text editor and put the following line in it:
 
 {% highlight bash %}
-ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", MODE="0666"
+ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", GROUP="adm", MODE="0666"
 {% endhighlight %}
 
 This tells the daemon that the file that corresponds to the USBasp programmer should be read/write for everyone.
@@ -94,7 +94,7 @@ Done.
 # create new rule
 $ sudo nano /etc/udev/rules.d/usbasp.rules
 # add this line
-ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", MODE="0666"
+ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", GROUP="adm", MODE="0666"
 # make readable for everyonoe
 sudo chmod 644 /etc/udev/rules.d/usbasp.rules
 # apply
