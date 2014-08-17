@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Hello World!
+title: Yet Another Home Automation Project
 ---
-{% include JB/setup %}
 
 ## Table of Contents
 
@@ -15,5 +14,3 @@ title: Hello World!
 ## Links
 
 [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-[Jekyll Bootstrap](http://jekyllbootstrap.com)
