@@ -3,8 +3,7 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
-title : Yet Another Home Automation Project
-tagline:
+title : Atmega328P Adventure Hour
 author :
   github : bitfighter
 
